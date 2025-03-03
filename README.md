@@ -2,8 +2,6 @@
 
 ![App Screenshot](https://i.ibb.co/848KtM8Z/image.png)
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
 ## Overview
 PortfolioGen is a modern portfolio generator that transforms your resume into a stunning online portfolio, showcasing your skills, experience, and achievements with elegant design.
 

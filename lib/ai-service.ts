@@ -71,9 +71,6 @@ export async function analyzeResumeWithAI(resumeData: ResumeData): Promise<Resum
     const preprocessedResumeData = preprocessResumeData(resumeData)
 
     // Get the API keys from environment variables
-    const apiKey = "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"
-    const apiBase = "https://openrouter.ai/api/v1"
-    const model = "qwen/qwen2.5-vl-72b-instruct:free"
 
 
     console.log("Preprocessed Data Sent to AI:", preprocessedResumeData);

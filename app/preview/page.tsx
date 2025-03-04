@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react"
 import type { ResumeData } from "@/lib/types"
 import Portfolio from "@/components/portfolio"
 import PortfolioThemeTwo from "@/components/portfolio-theme-two"
+import PortfolioThemeBrice from "@/components/portfolio-theme-brice"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { downloadPortfolio } from "@/lib/download-utils"
 
@@ -49,6 +50,7 @@ export default function PreviewPage() {
             <SelectContent>
               <SelectItem value="modern">Modern Theme</SelectItem>
               <SelectItem value="dark">Dark Theme</SelectItem>
+              <SelectItem value="brice">Brice Theme</SelectItem>
             </SelectContent>
           </Select>
           <Button variant="outline" onClick={() => router.push("/form")}>
@@ -58,8 +60,13 @@ export default function PreviewPage() {
         </div>
       </div>
 
-      {selectedTheme === "modern" ? <Portfolio data={portfolioData} /> : <PortfolioThemeTwo data={portfolioData} />}
+      {selectedTheme === "modern" ? (
+        <Portfolio data={portfolioData} />
+      ) : selectedTheme === "dark" ? (
+        <PortfolioThemeTwo data={portfolioData} />
+      ) : (
+        <PortfolioThemeBrice data={portfolioData} />
+      )}
     </div>
   )
 }
-

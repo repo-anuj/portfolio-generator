@@ -72,3 +72,6 @@
   animation: bounce-slow 3s infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
